@@ -46,6 +46,23 @@
   </div>
 </div>
 
+<div>
+  <ul class="nav nav-pills">
+      <li role="presentation" class="active">
+          <input type="search" ng-model="searchText" class="form-control input-sm search-form" placeholder="Search Name">
+      </li>
+      <div class="form-inline">
+          <label for="sort" id="label">Order By</label>
+          <select class="form-control" id="sort" ng-model="sortBy">
+          <option value="-created_at">Latest</option>
+          <option value="created_at">Oldest</option>
+          <option value="-price">Low to High Price</option>
+          <option value="price">High to Low Price</option>
+      </select>
+      </div>
+  </ul>
+</div>
+
 <div class="row">
     <div class="col-md-8">
         <form ng-submit="$ctrl.makeAd()" name="$ctrl.newpost" novalidate>
@@ -72,5 +89,6 @@
 
     </div>
 </div>
+
 
 </main>
