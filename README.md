@@ -28,4 +28,3 @@ The app should do the following:
 - Delete an ad
 - Filter ads (titles and descriptions)
 - Sort ads based on posting date and price
-
